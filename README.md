@@ -21,3 +21,15 @@ This repository contains everything you need for this lab.
 - Keep this repository scoped to this lab only — no unrelated projects or personal files.
 - Use clear, descriptive filenames.
 - Remove secrets, API keys, and tokens before committing.
+
+- ## My submission
+
+[Read the Lesson Recapper post-project review](post-project-review.md)
+
+## Repository files
+
+- `post-project-review.md`: Project snapshot, stakeholder analysis,
+  production gaps, scope revision, and checklist.
+- `README.md`: Lab introduction and file guide.
+- `instructions.md`: Assignment instructions.
+- `rubric.md`: Assessment criteria.
