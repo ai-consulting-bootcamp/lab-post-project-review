@@ -5,7 +5,9 @@ __pycache__/
 .venv/
 venv/
 ai_apocalypse.ipynb
+.vscode/
+AGENTS.md
+*.pdf
 outputs/*
-!outputs/.gitkeep
 !outputs/ai_apocalypse_episode.mp3
 
