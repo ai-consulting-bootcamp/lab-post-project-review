@@ -4,6 +4,7 @@ __pycache__/
 *.py[cod]
 .venv/
 venv/
+ai_apocalypse.ipynb
 outputs/*
 !outputs/.gitkeep
 !outputs/ai_apocalypse_episode.mp3
