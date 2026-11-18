@@ -1,0 +1,9 @@
+# Gradio 3.50.2 is compatible with Python 3.9 in this environment.
+gradio==3.50.2
+# This version preserves the HfFolder API required by Gradio.
+huggingface_hub==0.25.2
+openai>=1.40.0
+pypdf>=5.0.0
+python-dotenv>=1.0.1
+pydub>=0.25.1
+

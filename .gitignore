@@ -1,0 +1,13 @@
+.env
+.env.*
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+ai_apocalypse.ipynb
+.vscode/
+AGENTS.md
+*.pdf
+outputs/*
+!outputs/ai_apocalypse_episode.mp3
+
