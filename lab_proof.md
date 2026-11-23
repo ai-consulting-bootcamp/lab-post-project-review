@@ -44,4 +44,32 @@ Risk if ignored (what goes wrong if you never talk to them or design for them)
 **Low Interest:** is defined as limited concern about the product’s technical specifications, development decisions, and overall direction. The stakeholder impact also considers implication for production ready product rather than just MVP.
 
 ### Part 3: From demo to “real project”
+Course demos often assume happy paths, static data, generous API budgets, and you as the maintainer. 
+For each dimension, write 2–3 sentences: how your current project handled it (even if “not at all”) and what would change for a production rollout.
 
+Operations
+Current MVP: The app shows specific file/PDF errors and a generic message for unexpected failures. Errors are only printed in the terminal; there is no automated monitoring, alerting, incident process, on-call owner, or backup system.
+Production rollout: Add structured logging, monitoring, alerts, retries, backups, and a defined support owner.
+
+Security and compliance
+Current MVP: The OpenAI key is loaded from an environment variable or local .env file, and .env is listed in .gitignore. The app has no malware scanning, upload security checks, authentication, authorization, or copyright-permission workflow.
+Production rollout: Use managed secret storage, scan and validate uploads, restrict access, maintain audit records, and disclose third-party AI processing.
+
+Data lifecycle
+Current MVP: The app stores one shared transcript, source-metadata file, and MP3, replacing the previous episode after successful generation. It has no user accounts, per-user access controls, retention policy, or deletion controls.
+Production rollout: Store outputs per user or project, define retention periods, provide deletion controls, and remove uploaded PDFs after processing when appropriate.
+
+Scope beyond the demo (edge cases)
+Current MVP: The app accepts multiple PDFs and rejects missing, invalid, unreadable, or text-free files, but one unreadable PDF stops the whole batch. It has no OCR, PDF-size limits, topic checks, or confirmation workflow, and it intentionally removes detected bibliography sections.
+Production rollout: Process files individually, report failures by filename, add OCR and size/page/token checks, and let users confirm exclusions. Generation should stop only when there is not enough readable and relevant source material.
+
+### Part 4: Revision brief
+Time: 10–15 minutes
+
+Write a before / after of one short paragraph each:
+
+### Part 4 — Revision Brief
+
+**Before:** Our goal was to build a working AI-powered Podcast Studio that transformed PDFs into conversational podcasts using an LLM and text-to-speech. Success meant demonstrating the complete workflow through a Gradio interface.
+
+**After:** We would spend more time agreeing on the scope upfront to avoid minor scope creep. We would also assign clear responsibilities to each team member and integrate our work through a shared GitHub repository. Initially, we explored the entire workflow individually to learn how it worked, but this resulted in different approaches that were difficult to combine. Going forward, we would define responsibilities, component interfaces, and integration processes earlier, while expanding success criteria to include security, data handling, and reliable error management.
