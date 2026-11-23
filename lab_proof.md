@@ -73,3 +73,18 @@ Write a before / after of one short paragraph each:
 **Before:** Our goal was to build a working AI-powered Podcast Studio that transformed PDFs into conversational podcasts using an LLM and text-to-speech. Success meant demonstrating the complete workflow through a Gradio interface.
 
 **After:** We would spend more time agreeing on the scope upfront to avoid minor scope creep. We would also assign clear responsibilities to each team member and integrate our work through a shared GitHub repository. Initially, we explored the entire workflow individually to learn how it worked, but this resulted in different approaches that were difficult to combine. Going forward, we would define responsibilities, component interfaces, and integration processes earlier, while expanding success criteria to include security, data handling, and reliable error management.
+
+For production, we would retain the core podcast generation workflow but introduce clearer requirements for security, data handling, and content reliability. Users would specify a podcast topic, receive warnings about unreadable, oversized, or irrelevant PDFs, and confirm before proceeding with incomplete sources. We would also introduce secure API key management, PDF validation, individual access to saved episodes, and automatic deletion of uploaded PDFs after processing. To control storage costs, only the latest episode would be retained per user, with an option to download it
+
+### Checkpoints
+
+Use this order and tick each box in your submission.
+
+- [x] Recognize: You named the project and stated one clear intended beneficiary.
+- [x] Apply: Your stakeholder table has at least six rows, each with a need, risk, influence, and interest.
+- [x] Integrate: Your “demo → real” section covers at least four dimensions with concrete changes.
+- [x] Verify: Your revision brief shows a visible shift in scope or success criteria between “before” and “after.”
+- [ ] Stretch (optional): Add one row for a stakeholder who is easy to forget and explain why they matter.
+
+### Definition of done
+All requirements filled in this .md file
